@@ -171,25 +171,27 @@ Acceptance: two local processes run, and the browser receives the backend health
 - [x] Configure a Supabase Free project and apply the migration; confirm no paid add-ons are enabled.
 - [x] Configure local authentication site URL/redirect URLs.
 - [x] Build registration/login first, then protected dashboard and logout.
-- [ ] Handle confirmation, session restoration, and expired sessions.
-- [ ] Implement backend token verification and request-scoped database access.
+- [x] Handle email confirmation and session restoration after refresh.
+- [ ] Verify expired-session behavior and refresh failure.
+- [x] Implement backend token verification and request-scoped database access.
 
 Acceptance: sign in and refresh successfully; unauthenticated API calls return 401.
 
 ### 3. Task CRUD
 
-- [ ] Implement API routes and validation.
-- [ ] Build task form, list, completion toggle, and delete action.
-- [ ] Add loading, empty, and error states and responsive styling.
-- [ ] Verify persistence and account isolation.
+- [x] Implement API routes and validation.
+- [x] Build task form, list, completion toggle, and delete action.
+- [x] Add loading, empty, and error states.
+- [ ] Add responsive styling and verify the phone layout.
+- [x] Verify persistence and account isolation.
 
 Acceptance: a task survives reload; a second account cannot read, modify, or delete it.
 
 ### 4. Verification
 
 - [ ] Add focused API tests for validation, authentication failures, and HTTP responses using an appropriate lightweight test setup.
-- [ ] Run a real integration check against a test Supabase project/account to verify RLS and ownership; mocks alone cannot prove isolation.
-- [ ] Run frontend production build and resolve failures.
+- [x] Run a real integration check against a test Supabase project/account to verify RLS and ownership; mocks alone cannot prove isolation.
+- [x] Run frontend production build and resolve failures.
 - [ ] Complete the manual acceptance checklist below.
 
 Do not build a large test framework for this small project. Never use destructive test cleanup against unrelated data. If required credentials are unavailable, report which integration checks remain pending.
@@ -229,7 +231,3 @@ Use current official provider instructions for exact configuration. If account a
 ## Definition of done
 
 The user can demonstrate a deployed authenticated app with persistent, isolated tasks. The repository contains reproducible setup, SQL migration, environment examples, and clear deployment instructions. Codex reports what was built, what checks actually passed, the live URLs, and any remaining blockers. UI polish is secondary to completing and understanding the browser → Express API → database flow.
-
-## Suggested first prompt
-
-> Read plan.md and the repository instructions. Help me implement this private task tracker incrementally using React + Vite, Express, and Supabase. Start with milestone 1, explain the role of each layer briefly, then continue through the remaining milestones. Keep plan.md updated. My goal is to understand deployment and finish with a working public URL. Ask me for account configuration only when it is needed; never invent credentials or claim unperformed checks passed.

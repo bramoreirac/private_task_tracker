@@ -6,15 +6,13 @@ A learning project with a React/Vite frontend, an Express API, and Supabase auth
 
 Use a supported Node.js version and npm. In PowerShell, `npm.cmd` works even if the execution policy blocks `npm.ps1`.
 
-The frontend is ready to run:
+Copy `frontend/.env.example` to `frontend/.env` and `backend/.env.example` to
+`backend/.env`, then fill in the local values. Real values belong only in local
+`.env` files or provider dashboards. `.env` files are ignored by Git. The
+`VITE_` variables are embedded in the frontend build and must contain only
+public values.
 
-```powershell
-cd frontend
-npm.cmd install
-npm.cmd run dev
-```
-
-Open the localhost URL printed by Vite. The backend package is prepared; its server and health route are the next exercise. Once implemented, run it in a second terminal:
+Start the backend in one terminal:
 
 ```powershell
 cd backend
@@ -22,4 +20,13 @@ npm.cmd install
 npm.cmd run dev
 ```
 
-Copy each app's `.env.example` to a local `.env` when its configuration is needed. Enter real values only in local `.env` files or provider dashboards. `.env` files are ignored by Git. The `VITE_` variables are embedded in the frontend build and must contain only public values.
+Start the frontend in a second terminal:
+
+```powershell
+cd frontend
+npm.cmd install
+npm.cmd run dev
+```
+
+Open the localhost URL printed by Vite. The backend health endpoint is
+`http://localhost:3001/api/health` by default.
