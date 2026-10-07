@@ -158,19 +158,19 @@ Configure CORS for the exact frontend origin and allow the Authorization and Con
 
 ### 1. Scaffold and connect
 
-- [ ] Inspect repository instructions and available tools.
-- [ ] Create the React/Vite frontend and Express backend.
-- [ ] Add npm scripts for frontend development/build and backend development/start.
-- [ ] Add environment examples, gitignore, and basic README.
-- [ ] Implement health endpoint and verify React can reach it locally.
+- [x] Inspect repository instructions and available tools.
+- [x] Create the React/Vite frontend and Express backend.
+- [x] Add npm scripts for frontend development/build and backend development/start.
+- [x] Add environment examples, gitignore, and basic README.
+- [x] Implement health endpoint and verify React can reach it locally.
 
 Acceptance: two local processes run, and the browser receives the backend health response.
 
 ### 2. Database and authentication
 
-- [ ] Configure a Supabase Free project and apply the migration; confirm no paid add-ons are enabled.
-- [ ] Configure local authentication site URL/redirect URLs.
-- [ ] Build registration/login first, then protected dashboard and logout.
+- [x] Configure a Supabase Free project and apply the migration; confirm no paid add-ons are enabled.
+- [x] Configure local authentication site URL/redirect URLs.
+- [x] Build registration/login first, then protected dashboard and logout.
 - [ ] Handle confirmation, session restoration, and expired sessions.
 - [ ] Implement backend token verification and request-scoped database access.
 

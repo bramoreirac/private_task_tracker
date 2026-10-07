@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+
+# Local configuration belongs on each machine or hosting dashboard.
+**/.env
+**/.env.*
+!**/.env.example
