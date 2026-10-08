@@ -30,3 +30,9 @@ npm.cmd run dev
 
 Open the localhost URL printed by Vite. The backend health endpoint is
 `http://localhost:3001/api/health` by default.
+
+## Hosted backend
+
+Render service: https://private-task-tracker.onrender.com
+
+Health endpoint: https://private-task-tracker.onrender.com/api/health

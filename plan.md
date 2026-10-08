@@ -198,9 +198,9 @@ Do not build a large test framework for this small project. Never use destructiv
 
 ### 5. Deploy and verify online
 
-- [ ] Push source to the user's GitHub repository; ensure no credentials are committed.
-- [ ] Deploy backend on Render with backend root, appropriate npm install/start commands, environment values, and `/api/health` health check.
-- [ ] Verify the deployed backend health URL.
+- [x] Push source to the user's GitHub repository; ensure no credentials are committed.
+- [x] Deploy backend on Render with backend root, appropriate npm install/start commands, environment values, and `/api/health` health check.
+- [x] Verify the deployed backend health URL.
 - [ ] Deploy frontend on Vercel Hobby (free tier) with frontend root, `npm run build`, and `dist` output; confirm the selected plan.
 - [ ] Configure Vite production variables with the actual backend URL and Supabase public settings before building.
 - [ ] Configure Vercel SPA fallback so direct navigation/refresh of `/login`, `/register`, and `/dashboard` serves the app without intercepting real assets.
