@@ -192,7 +192,7 @@ Acceptance: a task survives reload; a second account cannot read, modify, or del
 - [ ] Add focused API tests for validation, authentication failures, and HTTP responses using an appropriate lightweight test setup.
 - [x] Run a real integration check against a test Supabase project/account to verify RLS and ownership; mocks alone cannot prove isolation.
 - [x] Run frontend production build and resolve failures.
-- [ ] Complete the manual acceptance checklist below.
+- [x] Complete the manual acceptance checklist below.
 
 Do not build a large test framework for this small project. Never use destructive test cleanup against unrelated data. If required credentials are unavailable, report which integration checks remain pending.
 
@@ -201,32 +201,32 @@ Do not build a large test framework for this small project. Never use destructiv
 - [x] Push source to the user's GitHub repository; ensure no credentials are committed.
 - [x] Deploy backend on Render with backend root, appropriate npm install/start commands, environment values, and `/api/health` health check.
 - [x] Verify the deployed backend health URL.
-- [ ] Deploy frontend on Vercel Hobby (free tier) with frontend root, `npm run build`, and `dist` output; confirm the selected plan.
-- [ ] Configure Vite production variables with the actual backend URL and Supabase public settings before building.
-- [ ] Configure Vercel SPA fallback so direct navigation/refresh of `/login`, `/register`, and `/dashboard` serves the app without intercepting real assets.
-- [ ] Set backend FRONTEND_ORIGIN to the actual frontend HTTPS origin and redeploy.
-- [ ] Configure Supabase production site URL and the exact confirmation redirect URLs used by the app; retain required localhost development redirects.
-- [ ] Test registration/confirmation, login, and task CRUD from the deployed frontend.
-- [ ] Verify on a phone using the public URL and test a second account.
-- [ ] Document actual frontend/backend URLs, configuration, and redeployment steps in README.
+- [x] Deploy frontend on Vercel Hobby (free tier) with frontend root, `npm run build`, and `dist` output; confirm the selected plan.
+- [x] Configure Vite production variables with the actual backend URL and Supabase public settings before building.
+- [x] Configure Vercel SPA fallback so direct navigation/refresh of `/login`, `/register`, and `/dashboard` serves the app without intercepting real assets.
+- [x] Set backend FRONTEND_ORIGIN to the actual frontend HTTPS origin and redeploy.
+- [x] Configure Supabase production site URL and the exact confirmation redirect URLs used by the app; retain required localhost development redirects.
+- [x] Test registration/confirmation, login, and task CRUD from the deployed frontend.
+- [x] Verify on a phone using the public URL and test a second account.
+- [x] Document actual frontend/backend URLs, configuration, and redeployment steps in README.
 
 Use current official provider instructions for exact configuration. If account access blocks deployment, complete the code/build and supply exact dashboard steps and values needed from the user. Do not call local-only completion a finished deployment. Note any observed hosting cold starts or limits without promising permanent free hosting.
 
 ## Manual acceptance checklist
 
-- [ ] Signed-out visitors see login; protected dashboard redirects to login.
-- [ ] Registration and any configured email confirmation work online.
-- [ ] Invalid login displays a useful message.
-- [ ] Account A creates, completes, uncompletes, and deletes a task.
-- [ ] Refresh retains the session and saved tasks.
-- [ ] Empty/whitespace and overlong titles are rejected by the backend.
-- [ ] Missing/invalid bearer tokens return 401 for every task route.
-- [ ] Account B sees none of A's tasks.
-- [ ] B's direct PATCH/DELETE requests using A's task UUID return 404 and leave A's task unchanged.
-- [ ] Database requests using B's token cannot access A's rows; anonymous requests cannot access tasks.
-- [ ] Logout clears the dashboard; subsequent task requests require authentication.
-- [ ] Direct navigation and refresh of deployed dashboard URL work.
-- [ ] Public HTTPS URL works on a phone without localhost dependencies.
+- [x] Signed-out visitors see login; protected dashboard redirects to login.
+- [x] Registration and any configured email confirmation work online.
+- [x] Invalid login displays a useful message.
+- [x] Account A creates, completes, uncompletes, and deletes a task.
+- [x] Refresh retains the session and saved tasks.
+- [x] Empty/whitespace and overlong titles are rejected by the backend.
+- [x] Missing/invalid bearer tokens return 401 for every task route.
+- [x] Account B sees none of A's tasks.
+- [x] B's direct PATCH/DELETE requests using A's task UUID return 404 and leave A's task unchanged.
+- [x] Database requests using B's token cannot access A's rows; anonymous requests cannot access tasks.
+- [x] Logout clears the dashboard; subsequent task requests require authentication.
+- [x] Direct navigation and refresh of deployed dashboard URL work.
+- [x] Public HTTPS URL works on a phone without localhost dependencies.
 
 ## Definition of done
 
