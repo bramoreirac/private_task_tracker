@@ -33,7 +33,7 @@ const LoginPage = () => {
   }
 
   return (
-    <main>
+    <main className="auth-page">
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <label>

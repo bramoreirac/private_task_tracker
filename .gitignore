@@ -1,6 +1,7 @@
 node_modules/
 dist/
 *.log
+/.agents/
 
 # Local configuration belongs on each machine or hosting dashboard.
 **/.env

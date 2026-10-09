@@ -172,7 +172,7 @@ Acceptance: two local processes run, and the browser receives the backend health
 - [x] Configure local authentication site URL/redirect URLs.
 - [x] Build registration/login first, then protected dashboard and logout.
 - [x] Handle email confirmation and session restoration after refresh.
-- [ ] Verify expired-session behavior and refresh failure.
+- [x] Verify expired-session behavior and refresh failure.
 - [x] Implement backend token verification and request-scoped database access.
 
 Acceptance: sign in and refresh successfully; unauthenticated API calls return 401.

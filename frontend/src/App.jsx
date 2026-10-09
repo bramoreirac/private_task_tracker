@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <p role="status">
+      <p className="session-status" role="status">
         {session ? `Signed in as ${session.user.email}` : 'Signed out'}
       </p>
       <Routes>

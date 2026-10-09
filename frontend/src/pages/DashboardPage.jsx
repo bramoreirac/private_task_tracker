@@ -165,7 +165,7 @@ function DashboardPage({ email }) {
 
 
   return (
-    <main>
+    <main className="dashboard-page">
       <h1>Dashboard</h1>
       <p>Signed in as {email}</p>
       <button type="button" onClick={handleLogout} disabled={pending}>
@@ -197,7 +197,7 @@ function DashboardPage({ email }) {
         ) : tasks.length === 0 ? (
           <p>No tasks yet.</p>
         ) : (
-          <ul>
+          <ul className="task-list">
             {tasks.map((task) => (
               <li key={task.id}>
                 <label>
