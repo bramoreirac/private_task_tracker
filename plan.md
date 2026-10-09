@@ -182,14 +182,14 @@ Acceptance: sign in and refresh successfully; unauthenticated API calls return 4
 - [x] Implement API routes and validation.
 - [x] Build task form, list, completion toggle, and delete action.
 - [x] Add loading, empty, and error states.
-- [ ] Add responsive styling and verify the phone layout.
+- [x] Add responsive styling and verify the phone layout.
 - [x] Verify persistence and account isolation.
 
 Acceptance: a task survives reload; a second account cannot read, modify, or delete it.
 
 ### 4. Verification
 
-- [ ] Add focused API tests for validation, authentication failures, and HTTP responses using an appropriate lightweight test setup.
+- [x] Add focused API tests for validation, authentication failures, and HTTP responses using an appropriate lightweight test setup.
 - [x] Run a real integration check against a test Supabase project/account to verify RLS and ownership; mocks alone cannot prove isolation.
 - [x] Run frontend production build and resolve failures.
 - [x] Complete the manual acceptance checklist below.
